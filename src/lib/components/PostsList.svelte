@@ -7,7 +7,7 @@
   {#each posts as post}
     <li>
       <article>
-        <a href="/blog/{post.slug}">
+        <a href="/words/{post.slug}">
           <img
           src={post.coverImage}
           alt=""
@@ -21,7 +21,7 @@
         </a>
       </article>
 
-      <p>{post.excerpt}</p>
+      <p>{post.content}</p>
     </li>
   {/each}
 </ul>

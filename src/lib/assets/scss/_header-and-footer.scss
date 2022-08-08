@@ -33,8 +33,10 @@ footer {
 }
 
 header {
-  background: var(--lightAccent);
+  // background: var(--lightAccent);
   color: var(--darker);
+  background: #fff;
+  // color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +67,9 @@ header {
   .menu-button {
     margin: 0;
     background: transparent !important;
-    color: inherit;
+    // background: #ccc !important;
+    // color: inherit;
+    color: #000;
     padding: 0;
     border: 0;
     width: 2rem;
@@ -89,8 +93,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--darker);
+    // background: var(--darker);
     color: var(--paper);
+    background: #fff;
+    // color: #fff;
     transition: all .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
     &.open {
@@ -104,7 +110,7 @@ header {
         animation: slide_in_left .2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 
         a {
-          color: inherit;
+          // color: inherit;
         }
 
         // Probably shouldn't have more than 8 main nav menu items, but if you do, you can adjust this
@@ -139,12 +145,14 @@ header {
       background: unset;
       pointer-events: unset;
       visibility: unset;
-      color: inherit;
+      // color: inherit;
 
       ul {
         margin: 1rem auto 0;
-        padding-top: 0.5rem;
-        border-top: 1px solid var(--dark);
+        // padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        // border-top: 1px solid var(--dark);
+        border-bottom: 1px solid var(--dark);
         width: max-content;
 
         li {
@@ -181,7 +189,7 @@ footer {
   }
 
   a {
-    color: inherit;
+    // color: inherit;
   }
 
   nav {

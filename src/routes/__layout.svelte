@@ -24,6 +24,7 @@
 	import { prefetch } from '$app/navigation'
   import { onMount } from 'svelte'
   import { fade } from 'svelte/transition'
+
 import Callout from '$lib/components/Callout.svelte';
 
   const transitionIn = { delay: 150, duration: 150 }
@@ -66,5 +67,5 @@ import Callout from '$lib/components/Callout.svelte';
       <slot />
     </main>
   {/key}
-  <Footer />
+  <!-- <Footer /> -->
 </div>

@@ -7,13 +7,13 @@
   {#each posts as post}
     <script>
       export const load = async ({ params }) => {
-		var ReadMeFile = await import(`/words/${post.slug}.md`);
-    var ReadMe = ReadMeFile.default;
-    export ReadMe
+		// var ReadMeFile = await import(`/words/${post.slug}.md`);
+    // var ReadMe = ReadMeFile.default;
+    // export ReadMe
 </script>
     <li>
       <article>
-        <a href="/words/{post.slug}">
+        <a href="/posts/{post.slug}">
           <img
           src={post.coverImage}
           alt=""
@@ -27,7 +27,7 @@
         </a>
       </article>
 
-      <p>{ReadMe}</p>
+
     </li>
   {/each}
 </ul>

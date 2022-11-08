@@ -1,6 +1,7 @@
 <script context="module">
   export const load = async () => {
-		const ReadMeFile = await import('../../README.md');
+		// const ReadMeFile = await import('../../README.md');
+		const ReadMeFile = await import('../../home.md');
     const ReadMe = ReadMeFile.default;
 
 		return {

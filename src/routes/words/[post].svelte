@@ -3,9 +3,7 @@
 <script context="module">
   export const load = async ({ params }) => {
     try {  
-      const post = await import(`../../lib/words/${params.post}.md`)
-      // const post = await import(`../../lib/posts/${params.post}.md`)
-      console.log(post)
+      const post = await import(`../../lib/posts/${params.post}.md`)
 
       return {
         props: {

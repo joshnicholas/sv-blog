@@ -1,43 +1,18 @@
 <script context="module">
-	// import { dirname } from 'path';
-	// import { fileURLToPath } from 'url';
-	// const loc = window.location.pathname;
-	// const loc = process.cwd()
-	// const __filename = fileURLToPath(import.meta.url);
-	// var loc = dirname(__filename);
-	// import { page } from '$lib/assets/js/store';
-  // import { currentPage, isMenuOpen } from '$lib/assets/js/store'
 
-
-	// console.log(currentPage)
-	// console.log("pageo: ", page)
-
-	// console.log("Loc: ", loc)
-	// console.log(process.cwd()) 
-
-	var loc = '/words'
+	let path = 'words';
 
 	export const load = async ({ fetch }) => {
-		const postRes = await fetch(`/api${loc}.json`)
+		const postRes = await fetch(`/api/{path}.json`)
 		const { posts } = await postRes.json()
 
-    const totalRes = await fetch(`/api${loc}/count.json`)
+    const totalRes = await fetch(`/api/{path}/count.json`)
     const { total } = await totalRes.json()
 
 		return {
 			props: { posts, total }
 		}
 	}
-
-
-	// console.log(loc)
-  // import { isMenuOpen } from '$lib/assets/js/store'
-	// console.log($isMenuOpen)
-
-	// export let currentPage
-	// const isCurrentPage = (page) => page == currentPage
-
-	// console.log(page)
 </script>
 
 
